@@ -27,7 +27,7 @@ function Subscribepage({ openmodal }) {
     }
 
     const validateInput = e => {
-        const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        const emailRegex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/;
         let { value } = e.target;
 
         if (value.match(emailRegex)) {
